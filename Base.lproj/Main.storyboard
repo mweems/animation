@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alien1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KPh-hA-u9Q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="386"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="386" id="zx9-Ki-HE9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxF-qk-HmC">
+                                <rect key="frame" x="81" y="409" width="158" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="4kZ-oj-6bH"/>
+                                    <constraint firstAttribute="height" constant="30" id="bUS-ns-csy"/>
+                                </constraints>
+                                <state key="normal" title="dance motherfucker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nz-69-zHY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KPh-hA-u9Q" secondAttribute="trailing" constant="-16" id="42z-Rr-jZr"/>
+                            <constraint firstAttribute="centerX" secondItem="uxF-qk-HmC" secondAttribute="centerX" id="BZu-rN-ao1"/>
+                            <constraint firstItem="KPh-hA-u9Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="NJh-xZ-rLr"/>
+                            <constraint firstItem="KPh-hA-u9Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ZST-aS-Kbj"/>
+                            <constraint firstItem="uxF-qk-HmC" firstAttribute="top" secondItem="KPh-hA-u9Q" secondAttribute="bottom" constant="23" id="pfo-5F-jUo"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="button" destination="uxF-qk-HmC" id="aOG-Fn-1L0"/>
+                        <outlet property="image" destination="KPh-hA-u9Q" id="Kkb-2f-Tp3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alien1.png" width="153" height="153"/>
+    </resources>
+</document>
